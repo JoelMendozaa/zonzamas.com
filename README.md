@@ -1,1 +1,1 @@
-# zonzamas.com
+# zonzamas.lan
