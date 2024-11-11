@@ -56,3 +56,7 @@ h1 > span{
 .mensaje_error{
     background: #ed5e5e;
 }
+
+body {
+    padding-left: 20px;
+}

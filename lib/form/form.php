@@ -6,14 +6,9 @@
     {
         //instancia única
         private static $instance;
-
-
         public $elementos = [];
-
         public $cantidad_errores;
-
         public $disabled;
-
         public $duplicado;
 
 
