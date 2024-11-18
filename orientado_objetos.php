@@ -78,6 +78,7 @@
     }
 
 
+
     function recuperar(){
         $form = Form::getInstance();
 
@@ -104,6 +105,7 @@
     {
         case 'create':
 
+            inicializar();
 
             if (!empty($form->val['paso']))
             {
@@ -352,13 +354,13 @@
     function insertar(){
         $form = Form::getInstance();
 
-
         $sql = "
             INSERT INTO usuarios
             (
                 nombre
                ,email
                ,edad
+               ,ip_ult_mod
 
             )
             VALUES
@@ -366,7 +368,6 @@
                  '". $_POST['nombre'] ."'
                 ,'". $_POST['email'] ."'
                 ,'". $_POST['edad'] ."'
-
                 ,'". $_SERVER['REMOTE_ADDR'] ."'
             );
         ";

@@ -13,13 +13,12 @@
             {
                 case 'ES':
                     $this->lit = [
-                        'nombre'         => 'Nombre'
-                        ,'email'         => 'Email'
-                        ,'edad'          => 'Edad'
-                        ,'enviar'        => 'Enviar'
-                        ,'error_gen'     => 'El campo es inválido'
-                        ,'nuevo'         => 'Nuevo'
-                        ,'editar'        => 'Editar'
+                        'nombre'        => 'Nombre'
+                       ,'email'         => 'Email'
+                       ,'edad'          => 'Edad'
+                       ,'enviar'        => 'Enviar'
+                       ,'error_gen'     => 'El campo es inválido'
+
                     ];
 
                 break;

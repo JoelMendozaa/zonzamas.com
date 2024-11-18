@@ -182,50 +182,6 @@
 
         $html_formulario = $form->pintar(['botones_extra' => $botones_extra,'exito' =>  $mensaje_exito]);
 
-
-        /*
-        $html_formulario = "
-
-            <form method=\"POST\" action=\"biblioteca.php\">
-                <input type=\"hidden\" name=\"paso\" value=\"1\" />
-                <input type=\"hidden\" name=\"oper\" value=\"{$oper}\" />
-                <input type=\"hidden\" name=\"id\" value=\"{$id}\" />
-
-                {$mensaje_exito}
-
-                <label class=\"". $errores['nombre']['class_error'] ." form-label\" for=\"nombre\">Nombre:</label>
-                <input {$disabled} class=\"form-control\" type=\"text\" id=\"nombre\" name=\"nombre\" value=\"{$_POST['nombre']}\" placeholder=\"Nombre del libro...\">
-                ". $errores['nombre']['desc_error'] ."
-                <br />
-
-                <label class=\"". $errores['descripcion']['class_error'] ." form-label\" for=\"descripcion\">Descripción:</label>
-                <textarea {$disabled} class=\"form-control\" id=\"descripcion\" name=\"descripcion\" placeholder=\"Descripción del libro...\">{$_POST['descripcion']}</textarea>
-                ". $errores['descripcion']['desc_error'] ."
-                <br />
-
-                <label class=\"". $errores['autor']['class_error'] ." form-label\" for=\"autor\">Autor:</label>
-                <input {$disabled} class=\"form-control\" type=\"text\" id=\"autor\" name=\"autor\" value=\"{$_POST['autor']}\" placeholder=\"Autor del libro...\"> 
-                ". $errores['autor']['desc_error'] ."
-                <br />
-
-                <label class=\"". $errores['editorial']['class_error'] ." form-label\" for=\"editorial\">Editorial:</label>
-                <select {$disabled}  class=\"form-control form-select\"  id=\"editorial\" name=\"editorial\"> 
-                    {$value_editoriales}
-                </select>
-                ". $errores['editorial']['desc_error'] ."
-                <br />
-
-                <div style=\"text-align:right\">
-                    {$botones_extra}
-                    <input {$disabled} type=\"submit\" class=\"btn btn-primary\" value=\"Enviar\" />
-                </div>
-                
-
-            </form>
-        
-        ";
-        */
-
         return $html_formulario;
 
 
